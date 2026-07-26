@@ -1,0 +1,25 @@
+.header{
+
+    text-align:center;
+
+    padding-top:30px;
+
+    color:white;
+
+}
+
+.header h1{
+
+    margin:0;
+
+    font-size:38px;
+
+}
+
+.header p{
+
+    color:#bbbbbb;
+
+    margin-top:10px;
+
+}

@@ -1,0 +1,24 @@
+.voice-status{
+
+    color:#e8e8ec;
+
+    font-size:20px;
+    font-weight:600;
+
+    margin-top:8px;
+
+    padding:10px 26px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.06);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(6px);
+
+    letter-spacing:.2px;
+
+    transition:all .3s ease;
+
+}

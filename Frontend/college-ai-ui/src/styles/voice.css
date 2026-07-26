@@ -1,0 +1,193 @@
+.voice-container{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    height:80vh;
+
+    background:radial-gradient(circle at 50% 30%, #1b1d2b 0%, #0f1017 70%);
+
+    gap:8px;
+
+}
+
+.orb-container{
+
+    margin-bottom:24px;
+
+}
+
+.orb{
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    transition:all .5s ease;
+
+    position:relative;
+
+}
+
+/* Idle (assistant band hai) */
+
+.idle{
+
+    background:linear-gradient(135deg,#3a3d4d,#23252f);
+
+    box-shadow:
+    0 0 20px rgba(120,120,140,0.25);
+
+    opacity:.6;
+
+}
+
+/* Listening */
+
+.listening{
+
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+
+    box-shadow:
+    0 0 30px #00c6ff,
+    0 0 60px #0072ff;
+
+    animation:listeningPulse 2s infinite;
+
+}
+
+/* Thinking */
+
+.thinking{
+
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+
+    box-shadow:
+    0 0 40px #ff9800,
+    0 0 80px #ff5722;
+
+    animation:thinkingRotate 1.2s linear infinite;
+
+}
+
+/* Speaking */
+
+.speaking{
+
+    background:linear-gradient(135deg,#00ff99,#00cc66);
+
+    box-shadow:
+    0 0 40px #00ff99,
+    0 0 90px #00cc66;
+
+    animation:speakingWave .7s infinite;
+
+}
+
+/* Listening */
+
+@keyframes listeningPulse{
+
+    0%{ transform:scale(1); }
+    50%{ transform:scale(1.08); }
+    100%{ transform:scale(1); }
+
+}
+
+/* Thinking */
+
+@keyframes thinkingRotate{
+
+    0%{ transform:rotate(0deg) scale(1); }
+    50%{ transform:rotate(180deg) scale(1.1); }
+    100%{ transform:rotate(360deg) scale(1); }
+
+}
+
+/* Speaking */
+
+@keyframes speakingWave{
+
+    0%{ transform:scale(1); }
+    25%{ transform:scale(1.15); }
+    50%{ transform:scale(.95); }
+    75%{ transform:scale(1.12); }
+    100%{ transform:scale(1); }
+
+}
+
+/* -----------------------------
+   Start / Stop Control Button
+   ----------------------------- */
+
+.control-btn{
+
+    margin-top:36px;
+
+    padding:16px 48px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:.3px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:transform .2s ease, box-shadow .3s ease, background .3s ease;
+
+    font-family:inherit;
+
+}
+
+.control-btn.start{
+
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+
+    box-shadow:
+    0 4px 20px rgba(0,114,255,0.45),
+    0 0 0 rgba(0,198,255,0);
+
+}
+
+.control-btn.start:hover{
+
+    transform:scale(1.06) translateY(-2px);
+
+    box-shadow:
+    0 6px 28px rgba(0,114,255,0.6),
+    0 0 30px rgba(0,198,255,0.5);
+
+}
+
+.control-btn.stop{
+
+    background:linear-gradient(135deg,#ff4d4d,#c9184a);
+
+    box-shadow:
+    0 4px 20px rgba(201,24,74,0.45);
+
+}
+
+.control-btn.stop:hover{
+
+    transform:scale(1.06) translateY(-2px);
+
+    box-shadow:
+    0 6px 28px rgba(201,24,74,0.6),
+    0 0 30px rgba(255,77,77,0.5);
+
+}
+
+.control-btn:active{
+
+    transform:scale(0.97);
+
+}

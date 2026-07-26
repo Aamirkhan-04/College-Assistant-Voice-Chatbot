@@ -1,0 +1,52 @@
+.home-container{
+
+    min-height:100vh;
+
+    background:#0f1017;
+
+    font-family:'Segoe UI', system-ui, sans-serif;
+
+}
+
+.header{
+
+    padding:24px 32px 20px 32px;
+
+    background:linear-gradient(90deg, #14151f 0%, #1a1c29 100%);
+
+    border-bottom:1px solid rgba(255,255,255,0.06);
+
+    box-shadow:0 2px 20px rgba(0,0,0,0.3);
+
+}
+
+.header h1{
+
+    margin:0;
+
+    font-size:28px;
+
+    background:linear-gradient(90deg,#00c6ff,#7b61ff);
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.header p{
+
+    margin:6px 0 0 0;
+
+    color:#9a9ba8;
+
+    font-size:14px;
+    font-weight:500;
+
+    letter-spacing:.3px;
+
+}
